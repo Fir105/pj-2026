@@ -1,18 +1,46 @@
 {
+  "node_modules/chart.js/auto/auto.js": {
+    "file": "assets/auto-1QHMfHcL.js",
+    "name": "auto",
+    "src": "node_modules/chart.js/auto/auto.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/read-excel-file/browser/index.js": {
+    "file": "assets/index-Dw6P2sb5.js",
+    "name": "index",
+    "src": "node_modules/read-excel-file/browser/index.js",
+    "isDynamicEntry": true
+  },
   "resources/css/app.css": {
-    "file": "assets/app-DN1ZmMYs.css",
+    "file": "assets/app-DqXiyypL.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/css/filament/admin/theme.css": {
-    "file": "assets/theme-CLHBxoRM.css",
+    "file": "assets/theme-DVO17Ksg.css",
     "src": "resources/css/filament/admin/theme.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-eMHK6VFw.js",
+    "file": "assets/app-BFhIKhM9.js",
     "name": "app",
     "src": "resources/js/app.js",
-    "isEntry": true
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/dashboard.js"
+    ]
+  },
+  "resources/js/dashboard.js": {
+    "file": "assets/dashboard-1tb-HWrz.js",
+    "name": "dashboard",
+    "src": "resources/js/dashboard.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "dynamicImports": [
+      "node_modules/chart.js/auto/auto.js",
+      "node_modules/read-excel-file/browser/index.js"
+    ]
   }
 }
